@@ -8,7 +8,7 @@
         /* 전체 화면 레이아웃을 가운데로 정렬 */
         body { 
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
-            line-height: 1.7; 
+            line-height: 1.8; 
             padding: 60px 20px; 
             max-width: 700px; /* 본문 폭을 깔끔하게 제한 */
             margin: 0 auto;   /* 화면 정중앙 배치 핵심 설정 */
@@ -17,64 +17,71 @@
         }
         
         /* 타이틀 간격 조정 */
-        h1 { font-size: 2.8rem; margin-bottom: 5px; color: #111; }
-        .intro { color: #666; font-size: 1.1rem; margin-bottom: 40px; }
+        h1 { font-size: 3rem; margin-bottom: 5px; color: #111; font-weight: 800; }
+        .intro { color: #666; font-size: 1.15rem; margin-bottom: 40px; }
         
-        /* 학력/경력 상자 세련되게 다듬기 */
+        /* [변경] 왼쪽에 굵은 Divider 세로선과 안쪽 들여쓰기 추가 */
         .info { 
             margin-bottom: 50px; 
-            background: #ffffff; 
-            padding: 25px; 
-            border-radius: 12px; 
-            box-shadow: 0 4px 6px rgba(0,0,0,0.02);
-            border: 1px solid #eef0f2;
+            padding-left: 20px;          /* 왼쪽에 여백을 주어 들여쓰기 효과 */
+            border-left: 3px solid #333; /* 왼쪽에 깔끔하고 선명한 세로선 생성 */
         }
-        .info p { margin: 8px 0; font-size: 0.95rem; }
+        .info p { margin: 10px 0; font-size: 1.05rem; color: #444; }
+        .info strong { color: #111; font-weight: 600; }
         
         /* 프로젝트 리스트 섹션 */
-        .project-list { margin-top: 40px; }
-        .project-list h2 { font-size: 1.6rem; margin-bottom: 25px; border-bottom: 2px solid #333; padding-bottom: 8px; }
+        .project-list { margin-top: 50px; }
+        .project-list h2 { font-size: 1.8rem; margin-bottom: 25px; color: #111; font-weight: 700; }
         
-        /* 프로젝트 카드 사이의 간격 조정 */
+        /* [추가] 프로젝트 카드들도 상단 프로필과 정렬을 맞추기 위한 들여쓰기 박스 */
+        .project-container {
+            padding-left: 20px;
+            border-left: 3px solid #eef0f2; /* 프로젝트 영역은 연한 회색 세로선으로 구분 */
+        }
+        
+        /* 프로젝트 카드 스타일 및 간격 조정 */
         .project-item { 
-            margin-bottom: 30px; 
-            padding: 20px; 
+            margin-bottom: 35px; 
+            padding: 25px; 
             background: #ffffff;
-            border-radius: 10px;
-            border: 1px solid #eee;
-            transition: transform 0.2s;
+            border-radius: 12px;
+            border: 1px solid #eef0f2;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.01);
+            transition: all 0.25s ease;
         }
         .project-item:hover {
-            transform: translateY(-3px); /* 마우스 올리면 살짝 들리는 효과 */
-            box-shadow: 0 6px 12px rgba(0,0,0,0.05);
+            transform: translateY(-4px); /* 마우스 올리면 살짝 들리는 효과 */
+            box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+            border-color: #ccc;
         }
-        .project-item a { text-decoration: none; color: #0066cc; font-size: 1.25rem; font-weight: bold; }
+        .project-item a { text-decoration: none; color: #0066cc; font-size: 1.35rem; font-weight: bold; }
         .project-item a:hover { text-decoration: underline; }
-        .summary { color: #666; margin-top: 8px; font-size: 0.95rem; }
+        .summary { color: #666; margin-top: 10px; font-size: 1rem; }
     </style>
 </head>
 <body>
 
     <h1>Vivienne</h1>
-    <p class="intro">사용자 경험을 설계하고, 데이터로 더 나은 시스템을 만드는 기획자/p>
+    <p class="intro">사용자 경험을 설계하고, 데이터로 더 나은 시스템을 만드는 기획자</p>
     
-
     <div class="info">
         <p><strong>Education :</strong> 학력 사항을 입력하세요.</p>
-        <p><strong>총 경력 : </strong> 8년 11개월(2026년 6월 기준)</p>
+        <p><strong>총 경력 :</strong> 8년 11개월(2026년 6월 기준)</p>
     </div>
 
     <div class="project-list">
         <h2>Projects</h2>
         
-        <div class="project-item">
-            <a href="project1.html">Project Title 1</a>
-            <p class="summary">프로젝트 1번에 대한 간단한 요약 설명이 들어갑니다.</p>
-        </div>
+        <div class="project-container">
+            <div class="project-item">
+                <a href="project1.html">Project Title 1</a>
+                <p class="summary">프로젝트 1번에 대한 간단한 요약 설명이 들어갑니다.</p>
+            </div>
 
-        <div class="project-item">
-            <a href="#">Project Title 2</a>
-            <p class="summary">프로젝트 2번에 대한 간단한 요약 설명이 들어갑니다.</p>
+            <div class="project-item">
+                <a href="#">Project Title 2</a>
+                <p class="summary">프로젝트 2번에 대한 간단한 요약 설명이 들어갑니다.</p>
+            </div>
         </div>
     </div>
 
