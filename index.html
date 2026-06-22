@@ -2,27 +2,65 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vivienne's Portfolio</title>
     <style>
-        body { font-family: Arial, sans-serif; line-height: 1.6; padding: 40px; max-width: 800px; margin: 0 auto; color: #333; }
-        h1 { font-size: 2.5rem; margin-bottom: 10px; }
-        .intro { color: #666; font-size: 1.1rem; margin-bottom: 30px; }
-        .info { margin-bottom: 40px; background: #f9f9f9; padding: 20px; border-radius: 8px; }
-        .project-list { margin-top: 30px; }
-        .project-item { margin-bottom: 25px; padding-bottom: 15px; border-bottom: 1px solid #eee; }
-        .project-item a { text-decoration: none; color: #0066cc; font-size: 1.3rem; font-weight: bold; }
+        /* 전체 화면 레이아웃을 가운데로 정렬 */
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            line-height: 1.7; 
+            padding: 60px 20px; 
+            max-width: 700px; /* 본문 폭을 깔끔하게 제한 */
+            margin: 0 auto;   /* 화면 정중앙 배치 핵심 설정 */
+            color: #333; 
+            background-color: #fafafa;
+        }
+        
+        /* 타이틀 간격 조정 */
+        h1 { font-size: 2.8rem; margin-bottom: 5px; color: #111; }
+        .intro { color: #666; font-size: 1.1rem; margin-bottom: 40px; }
+        
+        /* 학력/경력 상자 세련되게 다듬기 */
+        .info { 
+            margin-bottom: 50px; 
+            background: #ffffff; 
+            padding: 25px; 
+            border-radius: 12px; 
+            box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+            border: 1px solid #eef0f2;
+        }
+        .info p { margin: 8px 0; font-size: 0.95rem; }
+        
+        /* 프로젝트 리스트 섹션 */
+        .project-list { margin-top: 40px; }
+        .project-list h2 { font-size: 1.6rem; margin-bottom: 25px; border-bottom: 2px solid #333; padding-bottom: 8px; }
+        
+        /* 프로젝트 카드 사이의 간격 조정 */
+        .project-item { 
+            margin-bottom: 30px; 
+            padding: 20px; 
+            background: #ffffff;
+            border-radius: 10px;
+            border: 1px solid #eee;
+            transition: transform 0.2s;
+        }
+        .project-item:hover {
+            transform: translateY(-3px); /* 마우스 올리면 살짝 들리는 효과 */
+            box-shadow: 0 6px 12px rgba(0,0,0,0.05);
+        }
+        .project-item a { text-decoration: none; color: #0066cc; font-size: 1.25rem; font-weight: bold; }
         .project-item a:hover { text-decoration: underline; }
-        .summary { color: #555; margin-top: 5px; }
+        .summary { color: #666; margin-top: 8px; font-size: 0.95rem; }
     </style>
 </head>
 <body>
 
     <h1>Vivienne</h1>
-    <p class="intro">Hello, I'm Vivienne.. Introduction</p>
+    <p class="intro">사용자 경험을 설계하고, 데이터로 더 나은 시스템을 만드는 기획자/p>
 
     <div class="info">
         <p><strong>Education :</strong> 학력 사항을 입력하세요.</p>
-        <p><strong>총 경력 :</strong> 경력 사항을 입력하세요.</p>
+        <p><strong>총 경력 :</strong> 8년 11개월(2026년 6월 기준)</p>
     </div>
 
     <div class="project-list">
