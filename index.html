@@ -8,12 +8,25 @@
 </head>
 <body>
 
-    <h1>Vivienne</h1>
-    <p class="intro">🙋‍♀️Introduction</p>
-    <p>사용자 중심 사고와 데이터 기반의 의사결정을 바탕으로 <br>
-    여러 단위 프로젝트의 구축/운영을 책임져온 플랫폼/서비스 기획자입니다.<br>
-    복잡한 요구사항을 명확히 정리하고, 이해관계자 간의 의사결정을 이끌어내는 것에 강점이 있습니다.</p>
+    <div style="margin-bottom: 40px;">
+        <img src="https://via.placeholder.com/120" alt="Vivienne" style="border-radius: 50%; display: block; margin-bottom: 20px;">
+        
+        <h1>vivienne</h1>
+        <p class="intro-tag">introduction</p>
+        <p class="intro-text">
+            사용자 중심 사고와 데이터 기반의 의사결정을 바탕으로 <br>
+            여러 단위 프로젝트의 구축/운영을 책임져온 플랫폼/서비스 기획자입니다.<br>
+            복잡한 요구사항을 명확히 정리하고, 이해관계자 간의 의사결정을 이끌어내는 것에 강점이 있습니다.
+        </p>
+    </div>
     
+    <div class="nav-links center-align">
+        <a href="#about-me">About me</a>
+        <a href="#introduction">Introduction</a>
+    </div>
+
+    <h2 class="center-align">Experiences</h2>
+
     <div class="info">
         <div class="info-row">
             <strong>Education :</strong>
@@ -26,7 +39,7 @@
             </div>
 
             <div class="edu-grid" style="margin-top: 8px;">
-                <span>2014.03 ~ 2017.02</span>
+                <span>2017.03 ~ 20XX.XX</span>
                 <span class="univ">방송통신대학교</span>
                 <span>컴퓨터공학 전공</span>
                 <span>졸업</span>
@@ -50,14 +63,56 @@
         <div class="info-row" style="margin-top: 25px;">
             <p><strong>총 경력 :</strong> 8년 11개월 (2026년 6월 기준)</p>
         </div>
-    </div> <div class="project-list">
+    </div> 
+
+    <div class="project-list">
         <h2>Projects</h2>
         
-      <div class="project-container">
+<div class="project-container">
+            <!-- 💡 기획서 스케치(image_7d1d62.png)를 완벽 반영한 프로젝트 카드 1 -->
             <div class="project-item">
-                <a href="project1.html">Project Title 1</a>
-                <p class="summary">프로젝트 1번에 대한 간단한 요약 설명이 들어갑니다.</p>
+                
+                <!-- 1. 상단 타이틀 & 도메인 뱃지 & 우측 수행 기간 -->
+                <div class="project-header">
+                    <div>
+                        <a href="project1.html" style="border-bottom: 1px solid #111; padding-bottom: 2px;">Project Title</a>
+                        <span class="badge">Domain</span>
+                    </div>
+                    <div style="font-size: 0.95rem; color: #777; font-style: italic;">YY.MM ~ YY.MM</div>
+                </div>
+
+                <!-- 2. 소속/직무 및 기여도 구역 -->
+				<div class="project-meta">
+				    <div class="position">Department / position</div>     <!-- 💡 여기에 회색+이탤릭 적용됨 -->
+				    <div class="contribution">Contribution : 00%</div> <!-- 💡 여기에 기본 Pretendard 적용됨 -->
+				</div>
+
+                <!-- 3. 상세 업무 리스트 구역 -->
+                <ul class="task-list">
+                    <li>Task description</li>
+                    <li>Task description</li>
+                    <li>Task description</li>
+                </ul>
+
+                <!-- 4. 하단 스킬 키워드 구역 -->
+                <div class="skill-keywords">
+                    <strong>Skill Keywords</strong>
+                    <div class="keyword-wrap">
+                        <span class="keyword-tag">#keywords</span>
+                        <span class="keyword-tag">#keywords</span>
+                        <span class="keyword-tag">#keywords</span>
+                        <span class="keyword-tag">#keywords</span>
+                        <span class="keyword-tag">#keywords</span>
+                        <span class="keyword-tag">#keywords</span>
+                        <span class="keyword-tag">#keywords</span>
+                    </div>
+                </div>
+
             </div>
+            <!-- 프로젝트 카드 1 끝 -->
+            
+            <!-- (나머지 Project 2, 3, 4 카드는 일단 기존 형태 유지되니까, 나중에 이 구조대로 문구만 바꿔서 늘려가면 돼!) -->
+        </div>
 
             <div class="project-item">
                 <a href="project2.html">Project Title 2</a>
@@ -75,6 +130,6 @@
             </div>
         </div>
     </div>
-    
+
 </body>
 </html>
