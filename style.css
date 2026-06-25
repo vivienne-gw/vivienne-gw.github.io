@@ -140,16 +140,16 @@ h1 { font-size: 3rem; margin-bottom: 15px; color: #111; margin-bottom: 10px; fon
 }
 
 /* 🎨 0번부터 9번까지 커스텀 색상 (비비안이 원하는 색으로 고쳐 쓸 구역!) */
-.badge-0 { background-color: #EBEBEB; color: #666666; } /* 기본 연회색 */
-.badge-1 { background-color: #86C4FF; color: #666666; } /* 예시: 연하늘 */
-.badge-2 { background-color: #FDFDAA; color: #666666; } /* 예시: 연노랑 */
-.badge-3 { background-color: #94FFA4; color: #333333; } /* 예시: 연초록 */
-.badge-4 { background-color: #FFF7E6; color: #FA8C16; } /* 예시: 연주황 */
-.badge-5 { background-color: #F9F0FF; color: #722ED1; } /* 예시: 연보라 */
-.badge-6 { background-color: #FFF0F6; color: #EB2F96; } /* 예시: 연분홍 */
-.badge-7 { background-color: #E6FFF8; color: #13C2C2; } /* 예시: 민트 */
-.badge-8 { background-color: #FCFFE6; color: #A0D911; } /* 예시: 라임 */
-.badge-9 { background-color: #333333; color: #FFFFFF; } /* 예시: 다크블랙 */
+.badge-0 { background-color: #EBEBEB; color: #666666; } /*  연회색-공공 */
+.badge-1 { background-color: #86C4FF; color: #666666; } /*  연하늘-커머스 */
+.badge-2 { background-color: #FDFDAA; color: #666666; } /*  연노랑-교육 */
+.badge-3 { background-color: #94FFA4; color: #333333; } /*  연초록-금융 */
+.badge-4 { background-color: #FFCBB9; color: #FA8C16; } /*  연주황 */
+.badge-5 { background-color: #F9F0FF; color: #722ED1; } /*  연보라 */
+.badge-6 { background-color: #FFF0F6; color: #EB2F96; } /*  연분홍 */
+.badge-7 { background-color: #E6FFF8; color: #13C2C2; } /*  민트 */
+.badge-8 { background-color: #FCFFE6; color: #A0D911; } /*  라임 */
+.badge-9 { background-color: #333333; color: #FFFFFF; } /*  다크블랙 */
 
 /* 프로젝트 메타 정보 분리 스타일 */
 .project-meta {
