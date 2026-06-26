@@ -1,18 +1,16 @@
-/* style.css 전체 교체 코드 */
-
 @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.css");
 
 body { 
     font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif; 
     line-height: 1.8; 
     padding: 60px 20px; 
-    max-width: 700px; 
+    max-width: 800px; /* 💡 비비안의 요청대로 800px로 확장! */
     margin: 0 auto;   
     color: #333; 
     background-color: #fafafa;
 }
 
-/* 1번 요청: 문서 내 모든 h2 태그를 2rem으로 공통 적용 */
+/* 문서 내 모든 h2 태그 공통 스타일 */
 h2 { 
     font-size: 2rem; 
     color: #111; 
@@ -21,57 +19,40 @@ h2 {
     margin-bottom: 20px;
 }
 
-/* 상단 타이틀 스타일. 지금 소스 기준으로는 Vivienne */
-h1 { font-size: 3rem; margin-bottom: 15px; color: #111; margin-bottom: 10px; font-weight: 800; }
-.intro-tag { color: #666; font-size: 1.15rem; margin-bottom: 10px; font-weight: bold; }
-.intro-text { color: #444; font-size: 1rem; margin-bottom: 50px; } 
+/* 상단 타이틀 스타일 */
+h1 { font-size: 3rem; margin-bottom: 15px; color: #111; font-weight: 800; }
+.intro-tag { color: #666; font-size: 1.15rem; margin-bottom: 15px; font-weight: bold; }
 
-/* 3번 요청: 세로선을 2px 굵기에 연한 회색(#888)으로 부드럽게 변경 */
+/* 💡 소개 본문: 왼쪽 정렬로 변경하고, 가독성을 위해 자잘한 여백과 자간 조절 */
+.intro-text { 
+    color: #444; 
+    font-size: 1.05rem; 
+    line-height: 1.85;
+    text-align: left; /* 왼쪽 정렬 */
+    margin: 0 auto 50px auto;
+    max-width: 680px; /* 줄글이 너무 찢어지지 않게 본문 폭만 살짝 잡아줌 */
+} 
+
+/* 프로필 가이드선 세로선 */
 .info { 
     margin-bottom: 50px; 
-    padding-left: 20px; 
-/*border-left는 프로필 영역 전체를 감싸는 상자 왼쪽에 세로선을 그려줍니다.*/            
+    padding-left: 20px;          
     border-left: 2px solid #888; 
 }
 .info-row { margin: 15px 0; font-size: 1.05rem; color: #444; }
 .info-row strong { color: #111; font-weight: 600; display: block; margin-bottom: 8px; }
 
-/* 학력 레이아웃 그리드 시스템 */
-.edu-grid {
-    display: grid;
-    grid-template-columns: 140px 1fr 1fr 60px; 
-    gap: 10px;
-    font-size: 1rem;
-    color: #555;
-    align-items: center;
-    margin-top: 5px;
-}
-.edu-grid span { white-space: nowrap; } 
-.edu-grid .univ { font-weight: bold; color: #111; } 
+/* 정렬 헬퍼 클래스 */
+.center-align { text-align: center; }
+.left-align { text-align: left; }
 
-/* 4번 요청: 텍스트 링크 및 타이틀을 가운데 정렬하기 위한 스타일 */
-.center-align {
-    text-align: center;
-}
-.nav-links {
-    margin: 30px 0 50px 0;
-}
-.nav-links a {
-    text-decoration: none;
-    color: #0066cc;
-    font-weight: 600;
-    margin: 0 15px;
-    font-size: 1.1rem;
-}
-.nav-links a:hover {
-    text-decoration: underline;
-}
+/* 메뉴 링크 스타일 */
+.nav-links { margin: 30px 0 50px 0; }
+.nav-links a { text-decoration: none; color: #0066cc; font-weight: 600; margin: 0 15px; font-size: 1.1rem; }
+.nav-links a:hover { text-decoration: underline; }
 
 /* 프로젝트 리스트 및 카드 스타일 */
-.project-container {
-    padding-left: 20px;
-    border-left: 2px solid #eef0f2; 
-}
+.project-container { padding-left: 20px; border-left: 2px solid #eef0f2; }
 .project-item { 
     margin-bottom: 35px; 
     padding: 25px; 
@@ -80,136 +61,34 @@ h1 { font-size: 3rem; margin-bottom: 15px; color: #111; margin-bottom: 10px; fon
     border: 1px solid #eef0f2;
     box-shadow: 0 2px 4px rgba(0,0,0,0.01);
     transition: all 0.25s ease;
-    text-align: left; /* 카드는 왼쪽 정렬 유지 */
+    text-align: left;
 }
-.project-item:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
-    border-color: #ccc;
-}
+.project-item:hover { transform: translateY(-4px); box-shadow: 0 10px 20px rgba(0,0,0,0.05); border-color: #ccc; }
 .project-item a { text-decoration: none; color: #0066cc; font-size: 1.35rem; font-weight: bold; }
 .project-item a:hover { text-decoration: underline; }
-.summary { color: #666; margin-top: 10px; font-size: 1rem; }
+.project-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; }
 
-/* 1) 구분선 (Divider) */
-/* <div class="divider"></div>와 같이 사용해 주세요. 그러면 #CDD1D5의 가로선이 쓱 생깁니다. */
-.divider {
-    height: 1px;
-    background-color: #CDD1D5;
-    border: none;
-    margin: 30px 0; /* 위아래 여백을 30px씩 줌 */
-}
+/* 배지 시스템 */
+.badge { display: inline-block; padding: 3px 8px; border-radius: 4px; font-size: 0.85rem; margin-left: 8px; font-weight: normal; }
+.badge-0 { background-color: #EBEBEB; color: #666666; } 
+.badge-1 { background-color: #FFECEB; color: #FF4D4D; } 
+.badge-2 { background-color: #E6F7FF; color: #1890FF; } 
+.badge-3 { background-color: #F6FFED; color: #52C41A; } 
 
-/* 2) 연회색 배경 상자 (Background Box) */
-/*강조하고 싶은 회색 박스가 필요할 때 (예: 내 핵심 역량 요약 등)   <div class="gray-box"><p>여기에 들어가는 내용은 연회색 배경 상자 안에 예쁘게 갇히게 됩니다!</p></div>.gray-box {    background-color: #EBEBEB;
-    border-radius: 8px; */
-    /* 모서리를 부드럽게 */
-    padding: 20px;
-    margin: 20px 0;
-    color: #444;
-}
+/* 메타 정보 및 업무 리스트 */
+.project-meta { font-size: 0.95rem; margin-bottom: 12px; }
+.project-meta .position { color: #999999; font-style: italic; margin-bottom: 4px; }
+.project-meta .contribution { color: inherit; font-style: normal; }
+.task-list { list-style: none; padding-left: 0; margin: 15px 0; }
+.task-list li { position: relative; padding-left: 15px; margin-bottom: 6px; font-size: 0.95rem; color: #444; }
+.task-list li::before { content: "*"; position: absolute; left: 0; color: #444; }
 
-/* 3) 이미지/콘텐츠를 감싸는 그리드 상자 (추천 추가 스펙) */
-.content-layout {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 20px;
-}
+/* 키워드 랩 */
+.skill-keywords { margin-top: 20px; }
+.skill-keywords strong { display: block; font-size: 0.95rem; margin-bottom: 8px; color: #111; }
+.keyword-wrap { display: flex; flex-wrap: wrap; gap: 6px; }
+.keyword-tag { background-color: #EBEBEB; color: #555; padding: 4px 10px; border-radius: 4px; font-size: 0.85rem; }
 
-/* ==========================================
-   Project Item 내부 상세 레이아웃 스펙
-   ========================================== */
-
-/* 카드 상단 헤더 (제목과 기간을 양쪽 끝으로 정렬) */
-.project-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 8px;
-}
-
-/* 도메인 및 키워드용 공통 뱃지 스타일 */
-/* [공통] 배지의 기본 틀 (크기, 폰트, 여백 등) */
-.badge {
-    display: inline-block;
-    padding: 3px 8px;
-    border-radius: 4px;
-    font-size: 0.85rem;
-    margin-left: 8px;
-    font-weight: normal;
-}
-
-/* 🎨 0번부터 9번까지 커스텀 색상 (비비안이 원하는 색으로 고쳐 쓸 구역!) */
-.badge-0 { background-color: #EBEBEB; color: #666666; } /*  연회색-공공 */
-.badge-1 { background-color: #86C4FF; color: #666666; } /*  연하늘-커머스 */
-.badge-2 { background-color: #FDFDAA; color: #666666; } /*  연노랑-교육 */
-.badge-3 { background-color: #94FFA4; color: #333333; } /*  연초록-금융 */
-.badge-4 { background-color: #FFCBB9; color: #FA8C16; } /*  연주황 */
-.badge-5 { background-color: #F9F0FF; color: #722ED1; } /*  연보라 */
-.badge-6 { background-color: #FFF0F6; color: #EB2F96; } /*  연분홍 */
-.badge-7 { background-color: #E6FFF8; color: #13C2C2; } /*  민트 */
-.badge-8 { background-color: #FCFFE6; color: #A0D911; } /*  라임 */
-.badge-9 { background-color: #333333; color: #FFFFFF; } /*  다크블랙 */
-
-/* 프로젝트 메타 정보 분리 스타일 */
-.project-meta {
-    font-size: 0.95rem;
-    margin-bottom: 12px;
-}
-
-/* 1) 소속/직무: 회색(#999999) + 기울임꼴(Italic) */
-.project-meta .position {
-    color: #999999;
-    font-style: italic;
-    margin-bottom: 4px;
-}
-
-/* 2) 기여도: 기본 Pretendard 본문 컬러(#333 또는 #444) + 일반 서체 */
-.project-meta .contribution {
-    color: inherit; /* body에 지정된 기본 색상을 그대로 상속받음 */
-    font-style: normal;
-}
-
-/* 업무 상세 설명 리스트 (* Task description) */
-.task-list {
-    list-style: none; /* 기본 점 숨기기 */
-    padding-left: 0;
-    margin: 15px 0;
-}
-.task-list li {
-    position: relative;
-    padding-left: 15px;
-    margin-bottom: 6px;
-    font-size: 0.95rem;
-    color: #444;
-}
-.task-list li::before {
-    content: "*"; /* 비비안 스케치대로 별표 기호 넣기 */
-    position: absolute;
-    left: 0;
-    color: #444;
-}
-
-/* 스킬 키워드 구역 */
-.skill-keywords {
-    margin-top: 20px;
-}
-.skill-keywords strong {
-    display: block;
-    font-size: 0.95rem;
-    margin-bottom: 8px;
-    color: #111;
-}
-/* 키워드들 가로로 배치하기 */
-.keyword-wrap {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 6px;
-}
-.keyword-tag {
-    background-color: #EBEBEB;
-    color: #555;
-    padding: 4px 10px;
-    border-radius: 4px;
-    font-size: 0.85rem;
-}
+/* 미리 정의해둔 컴포넌트 */
+.divider { height: 1px; background-color: #CDD1D5; border: none; margin: 30px 0; }
+.gray-box { background-color: #EBEBEB; border-radius: 8px; padding: 20px; margin: 20px 0; color: #444; }
