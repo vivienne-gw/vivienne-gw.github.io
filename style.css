@@ -93,3 +93,97 @@ h1 { font-size: 3rem; margin-bottom: 15px; color: #111; font-weight: 800; }
 /* 미리 정의해둔 컴포넌트 */
 .divider { height: 1px; background-color: #CDD1D5; border: none; margin: 30px 0; }
 .gray-box { background-color: #EBEBEB; border-radius: 8px; padding: 20px; margin: 20px 0; color: #444; }
+
+/* ==========================================================================
+   📱 뷰포트 400px 이하 모바일 화면 심폐소생 스펙 (비비안 HTML 맞춤형)
+   ========================================================================== */
+@media (max-width: 768px) {
+    
+    body {
+        padding: 40px 16px !important;
+    }
+
+    .project-item { 
+        padding: 24px 16px !important;
+        margin-bottom: 25px !important;
+    }
+    
+    /* 1. 타이틀과 뱃지를 감싸는 헤더 박스 강제 정렬 */
+    .project-item .project-header {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: flex-start !important;
+        gap: 12px !important; /* 타이틀과 뱃지 사이 세로 간격 확보 */
+        margin-bottom: 15px !important; /* 이 헤더 전체와 아래 날짜 사이 간격 벌리기! */
+    }
+    
+    .project-item .project-header a {
+        font-size: 1.25rem !important;
+        line-height: 1.4 !important;
+        display: block !important;
+    }
+
+    /* 2. 🚨 기존 PC 스타일을 완벽하게 이겨먹는 뱃지 전용 마진 스펙 */
+    .project-item .project-header .badge {
+        display: inline-block !important;
+        margin-left: 0 !important; /* 모바일에선 옆 마진 불필요 */
+        margin-top: 4px !important;
+        margin-bottom: 12px !important; /* 🌟 뱃지 아래에 확실하게 12px 마진 부여! */
+        padding: 4px 10px !important;
+    }
+
+    /* 3. 📅 날짜와 참여율 등이 포함된 메타 정보 덩어리 위치 조정 */
+    .project-item .project-meta {
+        display: block !important;
+        margin-top: 15px !important; /* 뱃지와의 간격을 한 번 더 밀어주기 */
+        margin-bottom: 20px !important; /* 아래 리스트 글들과의 여백 확보 */
+        border-bottom: 1px dashed #eef0f2 !important;
+        padding-bottom: 12px !important;
+    }
+
+    .task-list {
+        padding-left: 5px !important;
+        margin: 20px 0 !important;
+    }
+
+    .task-list li {
+        margin-bottom: 12px !important;
+        line-height: 1.6 !important;
+        font-size: 0.95rem !important;
+        word-break: keep-all !important;
+    }
+
+    .keyword-wrap {
+        gap: 6px !important;
+        margin-top: 10px !important;
+    }
+}
+
+/* ==========================================================================
+   🖼️ 프로젝트 상세 기획 화면설계서(SB) 이미지 레이아웃 (PC + 모바일 통합)
+   ========================================================================== */
+/* 1. PC 화면 기준: 중앙 정렬 및 여백 스펙 */
+.design-img-wrap {
+    display: flex !important;
+    justify-content: center !important;  /* 🌟 좌우 정중앙 정렬! */
+    align-items: center !important;
+    margin: 30px 0 50px 0 !important;    /* 위아래 구역 간격 시원하게 벌리기 */
+    width: 100% !important;
+}
+
+/* 2. 이미지 자체의 반응형 스펙 방어선 */
+.design-img-wrap img {
+    max-width: 100% !important;          /* 본문 폭(800px)보다 이미지가 크면 알아서 쏙 맞춰줌 */
+    height: auto !important;             /* 가로세로 비율 깨짐 방지 */
+    border-radius: 8px !important;       /* 모서리 둥글게 감성 한 스푼 */
+    border: 1px solid #eef0f2 !important; /* 이미지 경계선 가이드라인 */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05) !important; /* 은은한 그림자 효과 */
+}
+
+/* 3. 모바일 화면(768px 이하)일 때 이미지 여백 미세 조정 */
+@media (max-width: 768px) {
+    .design-img-wrap {
+        margin: 20px 0 35px 0 !important; /* 모바일에선 위아래 간격을 살짝 콤팩트하게 */
+        padding: 0 4px !important;        /* 양옆 화면에 너무 꽉 차지 않게 미세 마진 */
+    }
+}
