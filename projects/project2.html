@@ -3,48 +3,207 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project 2 - Vivienne's Portfolio</title>
-    <style>
-        body { 
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
-            line-height: 1.8; padding: 60px 20px; max-width: 700px; margin: 0 auto;   
-            color: #333; background-color: #fafafa;
-        }
-        .back-btn { text-decoration: none; color: #666; font-size: 0.95rem; display: inline-block; margin-bottom: 30px; }
-        .back-btn:hover { color: #111; text-decoration: underline; }
-        h1 { font-size: 2.5rem; margin-bottom: 10px; color: #111; font-weight: 800; }
-        .project-date { color: #888; font-size: 0.95rem; margin-bottom: 40px; }
-        .section { margin-bottom: 40px; }
-        .section h2 { font-size: 1.4rem; color: #111; border-bottom: 1px solid #ddd; padding-bottom: 8px; margin-bottom: 15px; }
-        .section p, .section li { font-size: 1rem; color: #444; }
-        .section ul { padding-left: 20px; }
-    </style>
+    <title>Project Template - Vivienne's Portfolio</title>
+    <link rel="stylesheet" href="../style.css">
 </head>
 <body>
 
-    <a href="index.html" class="back-btn">← Go to the Main</a>
+    <a href="../index.html" class="back-btn">← Go to the Main</a>
 
-    <h1>NH농협은행 금융상품몰 도급 운영</h1>
-    <p class="project-date">수행 기간: 2024.09 ~ 2026.02</p>
+    <div class="project-detail-title">
+        <h1>NH농협은행 금융상품몰 도급 운영</h1>
+        <p class="summary">NH농협은행의 금융상품몰(인터넷뱅킹, 올원뱅크 앱, 모바일브랜치) 통합 운영</p>
+    </div>
+
+    <div class="info" style="margin-bottom: 40px;">
+        <div class="info-row"><strong>수행 기간 :</strong> 2024.09 ~ 2026.02 </div>
+        <div class="info-row"><strong>소속 / 직급 :</strong> 프론비즈 / 과장</div>
+        <div class="info-row"><strong>주요 도메인 :</strong> 금융 </div>
+    </div>
 
     <div class="section">
         <h2>1. 프로젝트 개요</h2>
-        <p>두 번째 프로젝트의 기획 배경과 목적을 적어보세요.</p>
+        <p class="desc-text">
+            예적금, 투자 상품, 대출 등의 상품을 이용하고자 하는 고객의 유입율을 높이고, 신규 상품에 대한 프로세스 설계와 같은 신규 작업, 법령 반영, 미스터리 쇼핑 결과 반영 등의 유지보수를 함께 진행하는 프로젝트입니다. 
+        </p>
     </div>
 
     <div class="section">
-        <h2>2. 주요 기획 내용</h2>
-        <ul>
-            <li>시장 및 경쟁사 벤치마킹 분석</li>
-            <li>주요 기능 정보 구조도(IA) 설계</li>
-            <li>서비스 정책 정의 및 예외 케이스 도출</li>
+        <h2>2. 주요 역할 및 수행 작업</h2>
+        <ul class="task-list">
+            <li>신규 상품에 대한 사업부, 플랫폼 요구사항 분석 정의</li>
+            <li>도출된 요구사항을 토대로 화면설계 및 기능명세서 작성</li>
+            <li>운영 시 발생하는 결함 및 이슈 대응 및 추적 관리</li>
+            <li>NDS 도입으로 기존 산출물(Powerpoint) -> 피그마 변환 작업</li>
+            <li>사업부서 및 전산 개발 파트 간 커뮤니케이션 </li>
         </ul>
     </div>
 
-    <div class="section">
-        <h2>3. 성과 및 레슨 런 (Lesson Learned)</h2>
-        <p>프로젝트를 통해 얻은 정량적 성과나 기획자로서 성장한 점을 작성해 보세요.</p>
+    <hr class="divider">
+
+
+<div class="section">
+    <h2>3. 상세 기획 및 화면 설계</h2>
+    
+    <h3 style="font-size: 1.3rem; color: #222; margin-top: 30px; margin-bottom: 10px;">
+        📌 노란우산 신규 상품 런칭
+    </h3>
+    
+    <!-- 🖼️ 쟈기가 새로 만든 projects/images 폴더 조준! -->
+    <div class="design-img-wrap">
+        <img src="images/yellow0.png" alt="노란우산 화면설계서">
     </div>
+</div>
+<p class="desc-text" style="margin-bottom: 10px;">
+    <strong>기획 의도</strong><br>
+    <!-- <span style="color: #888; font-size: 0.95rem;">(진행 중인 프로젝트로 기획 산출물 공유 불가)</span> -->
+</p>
+<!-- 여기서부터 -->
+        <!-- 정갈하게 들여쓰기 정렬되는 리스트 컴포넌트 -->
+        <ul class="task-list" style="line-height: 1.8;">
+            <li><strong>1) 영업점 상품의 비대면화 :</strong> 영업점 방문이 어려운 소상공인 고객을 위해 앱을 통해서도 동일하게 가입 가능하도록 설계</li>
+            <li><strong>2) 가입 프로세스 간소화 :</strong> 공마데, 스크래핑을 통한 서류 제출의 불편성 해소 및 중소기업중앙회 연계를 통해 가입 불가, 가입 가능 등 실시간으로 결과를 응답받을 수 있도록 구현</li>
+            <li><strong>3) 입력 정보 최소화 :</strong> 고객 CRM 연동, 스크래핑 등으로 고객의 입력항목을 최소화함으로써 입력 시 발생하는 오류를 줄이고자 함</li>
+            <li><strong>4) Seamless 프로세스 설계 :</strong> 개인사업자 특성상 논스탑으로 가입 완료까지 어려울 수 있음을 고려하여 임시저장 기능을 통해 끊김없이 진행 가능하도록 구현</li>
+        </ul>
+<p class="desc-text" style="margin-bottom: 10px;">
+    <strong>핵심 기여도 및 성과</strong><br>
+    <!-- <span style="color: #888; font-size: 0.95rem;">(진행 중인 프로젝트로 기획 산출물 공유 불가)</span> -->
+</p>
+<!-- 여기서부터 -->
+        <!-- 정갈하게 들여쓰기 정렬되는 리스트 컴포넌트 -->
+        <ul class="task-list" style="line-height: 1.8;">
+            <li>비즈니스 정책의 시스템화</li>
+            <li>Zero to One 설계 : 채널(개인고객, 기업뱅킹 고객)별 특성을 고려한 가입 프로세스 및 정책 정의</li>
+            <li>다각도 협업 및 이슈 관리</li>
+            <li>문서 산출물 자산화 : 화면설계서 외 테스트 문서, 정책 정의서 등의 표준화된 산출물로 프로젝트 개정 이력 및 향후 유지보수 효율성 증가</li>
+            
+        </ul>        
+
+        <h3 style="font-size: 1.3rem; color: #222; margin-top: 40px; margin-bottom: 10px;">
+            📌 개인형 IRP 경남도민연금 신규 개발
+        </h3>
+            <div class="design-img-wrap">
+                <img src="images/gyeonggam.png" alt="경남도민연금 화면설계서">
+            </div>
+            <div class="desc-text">
+                <strong>기획 의도</strong>
+                <p class="desc-text" style="margin-bottom: 10px;"></p>
+
+                <!-- 표준에 맞춘 정갈한 리스트 컴포넌트 -->
+                <div class="intent-container" style="line-height: 1.8; margin-top: 10px;">
+                    
+                    <!-- 1) 기획 배경 그룹 -->
+                    <div class="intent-group" style="margin-bottom: 15px;">
+                        <strong style="display: block; margin-bottom: 5px; margin-left: 10px;">1) 기획 배경</strong>
+                        <ul class="task-list" style="margin-left: 20px; padding-left: 10px;">
+                            <li><strong>소득 공백기 해소를 위한 정책 대응 :</strong> 은퇴 후 실제 연금 수령 전까지 발생하는 소득 공백기를 해소하고자, 경남도청 주도의 민생 안정형 노후 대비 신규 정책 상품 기획 필요.</li>
+                            <li><strong>효율적인 시스템 이식 :</strong> 확정된 일정 및 인원 내에서 최소한의 개발 공수를 위해, NH농협은행 금융상품몰의 기존 상품(개인형 IRP 세액공제형) 프로세스를 기반으로 하되 '경남도민 전용 가입 검증 로직'을 추가하는 고도화 과제 착수.</li>
+                        </ul>
+                    </div>
+
+                    <!-- 2) 프로세스 최적화 그룹 -->
+                    <div class="intent-group">
+                        <strong style="display: block; margin-bottom: 5px; margin-left: 10px;">2) 프로세스 최적화 및 이탈 최소화</strong>
+                        <ul class="task-list" style="margin-left: 20px; padding-left: 10px;">
+                            <li><strong>다중 이탈(Churn) 리스크 존재 :</strong> 경남도민 여부를 검증하기 위해 외부(경남도청 시스템 등) 연동이나 추가 인증 절차가 개입될 경우, 복잡한 뎁스(Depth)로 인해 유저가 프로세스 중간에 대거 이탈할 위험이 높다고 판단.</li>
+                            <li><strong>CRM 기반 선제적 타깃 판별 (Data-driven UX) :</strong> 가입 신청 단계에서 유저가 직접 서류를 증명하거나 이탈하는 허들을 제거하기 위해, 고객 CRM 데이터를 활용하여 경남도민 대상자 여부를 최우선으로 선별하는 프로세스 설계.</li>
+                            <li><strong>심리스(Seamless)한 가입 동선 구현 :</strong> 불필요한 앱 이탈 요소를 원천 차단하고, 금융 앱에 익숙하지 않은 중장년층 도민도 막힘없이 완결할 수 있도록 최소한의 터치와 직관적인 정보 구조(IA)로 가입 여정 최적화.</li>
+                        </ul>
+                    </div>
+
+                </div>
+                
+
+            <h3 style="font-size: 1.3rem; color: #222; margin-top: 40px; margin-bottom: 10px;">
+                📌 개인형 IRP 신규 계좌 로보어드바이저 일임형 서비스 신규 개발
+            </h3>
+            <div class="design-img-wrap">
+                <img src="images/ra.png" alt="로보어드바이저 화면설계서">
+            </div>
+            <div class="desc-text">
+                <strong style="display: block; margin-top: 15px; margin-bottom: 10px; font-size: 1rem; color: #000;">기획 의도</strong>
+
+                <div style="line-height: 1.8; padding-left: 0px; margin-left: 0px;">
+                    
+                    <div style="margin-bottom: 20px;">
+                        <span style="display: block; margin-bottom: 6px; font-weight: bold; font-size: 1.05em; color: #000000;">1) Zero to One</span>
+                        <div style="padding-left: 15px; color: #333333; position: relative;">
+                            <span style="position: absolute; left: 0; top: 0; font-size: 0.9em;">•</span>
+                            금융위원회 혁신금융서비스로 지정된 완전 신규 서비스로서, 정부 주도 시범 사업의 엄격한 가이드라인과 기준을 완벽히 준수하는 프로세스 설계 진행.
+                        </div>
+                    </div>
+
+                    <div style="margin-bottom: 20px;">
+                        <span style="display: block; margin-bottom: 6px; font-weight: bold; font-size: 1.05em; color: #000000;">2) 온보딩 최적화 및 사용자 진입 장벽 완화</span>
+                        <div style="padding-left: 15px; color: #333333; position: relative;">
+                            <span style="position: absolute; left: 0; top: 0; font-size: 0.9em;">•</span>
+                            레퍼런스가 없는 완전 신규 서비스 특성을 고려하여, 금융·정책 특유의 공급자 중심 전문 용어를 사용자 관점의 쉬운 언어로 대폭 순화 및 재정의.
+                        </div>
+                    </div>
+
+                    <div>
+                        <span style="display: block; margin-bottom: 6px; font-weight: bold; font-size: 1.05em; color: #000000;">3) 서비스 간 유기적 연계 및 크로스셀링(Cross-selling) 최적화</span>
+                        
+                        <div style="padding-left: 15px; margin-bottom: 8px; color: #333333; position: relative;">
+                            <span style="position: absolute; left: 0; top: 0; font-size: 0.9em;">•</span>
+                            '금융상품몰(퇴직연금)'과 '뱅킹(일임형 서비스)'이라는 서로 다른 이종 서비스 간의 가입 허들을 허물고, 끊김 없는 유기적 사용자 여정(User Journey) 구축.
+                        </div>
+                        
+                        <div style="padding-left: 15px; color: #333333; position: relative;">
+                            <span style="position: absolute; left: 0; top: 0; font-size: 0.9em;">•</span>
+                            단절되기 쉬운 두 개의 가입 프로세스를 하나의 플로우로 연결함으로써, 전환 과정에서의 유저 이탈을 방지하고 서비스 간의 크로스셀링(연계 가입) 성과 극대화.
+                        </div>
+                    </div>
+
+                </div>
+
+            <h3 style="font-size: 1.3rem; color: #222; margin-top: 40px; margin-bottom: 15px;">
+                📌 기타 유지보수 및 채널 고도화
+            </h3>
+
+            <!-- 💡 task-list 클래스를 주어 기존 CSS 스타일과 정렬을 통일하고, 문장을 프로페셔널하게 다듬었습니다. -->
+            <ul class="task-list" style="line-height: 1.9; margin-bottom: 30px; padding-left: 20px;">
+                <li style="margin-bottom: 8px;">
+                    <strong>투자상품군 투자자성향진단 고도화 :</strong> 개별 관리되던 복잡한 투자상품(ISA, 퇴직연금, 신탁, 펀드)의 투자자성향진단 프로세스를 일원화하여 유저 편의성 및 운영 효율성 극대화.
+                </li>
+                <li style="margin-bottom: 8px;">
+                    <strong>NH농협은행 모바일브랜치 상품 확대 및 올원뱅크 연계(1, 2차) :</strong> 모바일브랜치 내 올원뱅크 전용 상품 라인업 구축 및 다각도 채널 연계를 통한 가입 전환율 및 마케팅 시너지 제고.
+                </li>
+                <li style="margin-bottom: 8px;">
+                    <strong>퇴직연금 미스터리 쇼핑 지적사항 개선 :</strong> 현장 점검 지적사항을 바탕으로 불명확한 오안내 요소를 제거하고, 금융소비자보호법(금소법) 규정 스펙을 화면 로직에 철저히 반영하여 컴플라이언스 리스크 방지.
+                </li>
+                <li style="margin-bottom: 8px;">
+                    <strong>신탁 - 유언대용신탁 상담 신청 서비스 신규 개발 :</strong> 고객 맞춤형 유언대용신탁 상품 상담 프로세스 및 비대면 자가진단 로직 설계 (미오픈).
+                </li>
+                <li>
+                    <strong>NH대한민국 하나로 이음 대출 신규 상품 개발 :</strong> 취약계층 및 저소득자 고객을 위한 포용금융 상품군을 신규 추가하고, 서민금융 활성화를 위한 하나로 이음 대출 프로세스 전반 설계 및 성공적 런칭.
+                </li>
+            </ul>
+            </div>
+
+
+    <hr class="divider">
+
+    <div class="section">
+        <h2>4. 성과 및 성찰 (Lesson Learned)</h2>
+        <p class="desc-text" style="margin-bottom: 10px;">
+            <strong>정량적 / 정성적 성과</strong>
+        </p>
+        <ul class="task-list" style="margin-bottom: 25px;">
+                <li style="margin-bottom: 5px;"><strong>[정량적 성과] 다수의 금융/투자 상품 가입 프로세스 구축 및 자산화 :</strong> 퇴직연금(IRP), 방카슈랑스 등 영업점 중심의 복잡한 신규 투자 상품 가입 프로세스를 완결성 있게 설계 및 런칭 완료. 공통 가이드에 준한 표준 산출물 정의로 향후 운영 및 고도화 공수 최소화 기여.</li>
+                <li style="margin-bottom: 5px;"><strong>[정성적 성과] 고객 요구사항 분석 및 이해 관계 조율 :</strong> 사업부, 플랫폼팀, 개발, 디자인, 퍼블리싱 등 5개 이상의 유관 부서 간 상충하는 요구사항과 일정을 기민하게 조율. 시스템 제약 조건을 고려한 기획적 대안을 선제적으로 제시하며 프로젝트 리스크 최소화</li>
+                <li><strong>[UX 성과] 기획 산출물 컴포넌트화를 통한 설계 효율성 극대화:</strong> PPT 중심의 아날로그 기획 환경에서 Figma 체제로 전환되는 과도기에, 표준 화면 설계 템플릿 및 공통 UI 컴포넌트 라이브러리를 직접 구축. 이를 통해 후속 설계 작업의 일관성을 확보하고 생산성을 대폭 향상시키는 구조적 기반 마련.</li>
+        </ul>
+        
+        <p class="desc-text">
+            <strong>기획자로서의 성장 포인트</strong><br>
+                 <p> 도메인에 대한 지식이 아예 없는 상태에서 금융 상시 프로젝트를 처음으로 진행하며 가장 어려웠던 건 금융 서비스에 대한 이해와 당연시되는 상식들이었습니다. 여러 요건들이 동시에 진행되는 상시 특성상 일정이 빠듯한 경우가 많았고, 생소한 용어들이나 분석할 시간이 충분하지 않다는 어려움들이 존재했지만, 새로운 분야에 대한 도전이라 생각하며 업무 외 시간에 따로 공부하며 질문하는 것에 두려움 갖지 않고 물어보고 확인하며 적극적으로 임했습니다.</p>
+                <p>물론, 그 과정에서 많은 분들의 도움을 받았고, 금융 상품 프로세스나 상품 가입 후에 이어지는 여정, 상품별 갖고 있는 특성이나 제약사항 등 금융 도메인에 대한 심도 깊은 경험을 할 수 있었습니다.</p>
+        </p>
+    </div>
+
+    <div style="margin-bottom: 100px;"></div>
 
 </body>
 </html>
