@@ -71,10 +71,11 @@ h1 { font-size: 3rem; margin-bottom: 15px; color: #111; font-weight: 800; }
 
 /* 배지 시스템 */
 .badge { display: inline-block; padding: 3px 8px; border-radius: 4px; font-size: 0.85rem; margin-left: 8px; font-weight: normal; }
-.badge-0 { background-color: #EBEBEB; color: #666666; } 
-.badge-1 { background-color: #FFECEB; color: #FF4D4D; } 
-.badge-2 { background-color: #E6F7FF; color: #1890FF; } 
-.badge-3 { background-color: #F6FFED; color: #52C41A; } 
+.badge-0 { background-color: #EBEBEB; color: #666666; }  /* 0.공공 */
+.badge-1 { background-color: #FFECEB; color: #FF4D4D; }  /* 1. 교육 */
+.badge-2 { background-color: #E6F7FF; color: #1890FF; }  /* 2. 커머스 */
+.badge-3 { background-color: #F6FFED; color: #52C41A; }  /* 3. 금융 */
+.badge-4 { background-color: #a4d375; color: #1900ff; }  /* 4. 미정 */
 
 /* 메타 정보 및 업무 리스트 */
 .project-meta { font-size: 0.95rem; margin-bottom: 12px; }
