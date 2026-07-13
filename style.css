@@ -188,3 +188,67 @@ h1 { font-size: 3rem; margin-bottom: 15px; color: #111; font-weight: 800; }
         padding: 0 4px !important;        /* 양옆 화면에 너무 꽉 차지 않게 미세 마진 */
     }
 }
+
+    /* ==========================================================================\
+       🔧 Skill & Tools 갓벽 칼정렬 스펙 (PC 8개 / 모바일 3개 절대 사수)
+       ========================================================================== */
+    .tools-grid {
+        display: grid !important;
+        /* 💻 PC 버전: 군더더기 없이 무조건 한 줄에 딱 8등분 고정! */
+        grid-template-columns: repeat(8, 1fr) !important; 
+        gap: 16px 8px !important; /* 위아래 간격 16px, 좌우 간격 8px로 더 쫀쫀하게 */
+        width: 100% !important;
+        margin-top: 20px !important;
+        margin-bottom: 20px !important;
+    }
+
+    /* 각 Tool 아이템 상자 (중앙 정렬 방어) */
+    .tool-item {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        text-align: center !important;
+        width: 100% !important;
+    }
+
+    /* 🎯 로고 박스: 쟈기가 요청한 50px * 50px 절대 고정 크기 스펙 */
+    .tool-logo-box {
+        width: 50px !important;
+        height: 50px !important;
+        background-color: #ffffff !important; /* 로고 디자인 살려주는 흰색 배경 */
+        border: 1px solid #eeeeee !important; /* 정갈한 외곽 테두리 선 */
+        border-radius: 10px !important;       /* 피그마 스타일 둥근 모서리 */
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        margin-bottom: 6px !important;
+        overflow: hidden !important;
+    }
+
+    /* 로고 이미지 스케일 방어 */
+    .tool-logo {
+    width: auto !important;
+    height: auto !important;
+    max-width: 70% !important;   /* 박스 크기(50px)의 70%를 넘지 않도록 상한선 설정 */
+    max-height: 70% !important;  /* 가로나 세로 중 긴 쪽이 딱 70%에 걸쳐짐 */
+    object-fit: contain !important; /* 비율을 유지하면서 박스 안에 맞추는 마법 스펙 */
+    display: block !important;
+    }
+
+    /* Tool 글자 폰트 스타일 */
+    .tool-name {
+        font-size: 0.8rem !important;
+        color: #333333 !important;
+        margin: 0 !important;
+        line-height: 1.2 !important;
+        word-break: keep-all !important;
+    }
+
+    /* 📱 480px 이하 모바일 디바이스 전용 브레이크 포인트 */
+    @media (max-width: 480px) {
+        .tools-grid {
+            /* 📱 모바일 버전: 무조건 한 줄에 딱 3개씩 배치되도록 스펙 강제 조정 */
+            grid-template-columns: repeat(3, 1fr) !important; 
+            gap: 20px 8px !important; /* 모바일 전용 가독성 여백 */
+        }
+    }
