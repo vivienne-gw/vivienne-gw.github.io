@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Template - Vivienne's Portfolio</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+    <a href="../index.html" class="back-btn">← Go to the Main</a>
+
+    <div class="project-detail-title">
+        <h1>삼성전자 갤럭시 스토어 앱 신규 구축 </h1>
+    </div>
+
+    <div class="info" style="margin-bottom: 40px;">
+        <div class="info-row"><strong>수행 기간 :</strong> 2022.04~2022.12</div>
+        <div class="info-row"><strong>소속 / 직급 :</strong> 아이캔매니지먼트 / 과장</div>
+        <div class="info-row"><strong>주요 도메인 :</strong> 커머스</div>
+    </div>
+
+    <div class="section">
+        <h2>1. 프로젝트 개요</h2>
+        <p class="desc-text">
+            갤럭시 캠퍼스 스토어는 삼성전자 닷컴 내 별도로 운영되는 학생 전용 커머스 서비스로, 삼성전자 제품을 학생들에게 할인된 가격으로 제공하는 서비스입니다(2022년 기준, 2026년 앱 서비스 종료).           
+            </p>
+            <ul class="task-list" style="line-height: 1.8;">
+            <li><strong>비즈니스 배경 및 목표 :</strong> 기존 갤럭시 캠퍼스 스토어 사이트의 낮은 이용률을 극복하기 위해, '단순 판매 채널'에서 '학생 소통 플랫폼'으로의 패러다임 전환이 필요했습니다. 에브리타임이나 대학별 대나무숲과 같은 독자적인 학생 커뮤니티 생태계를 구축하여 유저 체류 시간을 늘리고, 차별화된 제품 할인 혜택을 연계하여 20대 핵심 충성 고객(Lock-in)을 확보하는 것을 목표로 삼았습니다.  </li>
+            <li><strong>프로젝트 및 설계 과제 :</strong> 삼성전자 닷컴의 거대한 레거시 시스템을 기반으로 하되, 갤럭시 캠퍼스 스토어만의 독립적인 비즈니스 규칙을 조화롭게 이식해야 하는 고난도 프로젝트였습니다. 대학생 신원 인증 프로세스, 커머스 결제 프로세스, 회원 등급별 차등 혜택 적용 로직 등 대규모 회원·통합 계정 체계 내에서 발생하는 수많은 엣지 케이스(Edge Case)를 선제적으로 정의하고 상세 화면 설계(SB)를 완결력 있게 수행했습니다.  </li>
+            </ul>
+    </div>
+
+    <div class="section">
+        <h2>2. 주요 역할 및 수행 업무</h2>
+        <ul class="task-list">
+            <li>유관부서 인터뷰를 통한 요구사항 분석 정의</li>
+            <li>도출된 요구사항을 토대로 B2B Front, Admin 메뉴구조도(IA) 정의 및 기능명세서 작성</li>
+            <li>User Flow 정의</li>
+            <li>주요 서비스에 대한 상세 프로세스 설계</li>
+            <li>주요 서비스에 대한 상세 프로세스 설계</li>
+            <li>주요 서비스에 대한 상세 프로세스 설계</li>
+            <li>서비스별 정책 정의 및 공통 코드 설계</li>
+            <li>사용자 유형별 개별 화면설계서 작성</li>
+        </ul>
+    </div>
+
+    <hr class="divider">
+
+    <div class="section">
+        <h2>3. 상세 기획 및 화면 설계</h2>
+        
+        <h3 style="font-size: 1.3rem; color: #222; margin-top: 30px; margin-bottom: 10px;">
+        📌  갤럭시 캠퍼스 스토어(대외비로 설계 공유 불가)
+        </h3>
+        
+        <p class="desc-text" style="margin-bottom: 10px;">
+            <strong>기획 의도</strong><br>
+            <div class="design-img-wrap">
+                <img src="images/gcs.png" alt="admin0">
+            </div>
+        </p>
+
+        <ul class="task-list" style="line-height: 1.8;">
+            <li><strong>1) 회원 자격 검증 및 인증 프로세스 최적화 :</strong> 신신규 및 기존 삼성닷컴 회원의 학생/교사 자격 검증 프로세스 설계 및 졸업·입학 등 유저 상태 변화에 따른 주기적 재인증 예외 로직 정교화. </li>
+            <li><strong>2) 커뮤니티 기반의 유저 락인(Lock-in) 전략 :</strong> 우리학교 게시판을 통해 같은 학교 학생들의 소속감을 강화하는 한편, 제품들에 대한 이야기를 공유하고 자랑하는 게시판을 개설하여 소통하고 이벤트 참여를 독려하는 체류 시간 증대 환경 구축</li>
+            <li><strong>3) 등급별 혜택 및 결제 프로세스 차단/분기 :</strong> 회원 등급 및 정책에 따라 차등 적용되는 할인/포인트 혜택 및 결제 예외 로직 정의, 단발성 구매를 넘어 충성고객(Lock-in)을 확보하기 위한 정책 정의</li>
+            <li><strong>4) 안전한 가이드라인 준수를 위한 리스크 방어 설계 :</strong> 비속어 필터링 등 커뮤니티 내 유저 분쟁을 예방하는 운영 정책을 반영하고, 이벤트 부정 참여 및 어뷰징(Abuse)을 원천 차단하는 보안 중심의 클라이언트/서버 단 예외 케이스 설계</li>
+            </ul>
+
+            
+    </div>
+
+    <div class="section">
+        <h2>4. 사용 도구 및 산출물</h2>
+        <p class="desc-text" style="margin-bottom: 10px;">
+            <strong>사용 도구</strong>
+        </p>
+         <div class="keyword-wrap">
+                        <span class="keyword-tag">#MSoffice</span>
+                        <span class="keyword-tag">#Jira</span>
+                        <span class="keyword-tag">#AdobeXD</span>
+                    </div>
+        <p class="desc-text" style="margin-bottom: 10px;">
+            <strong>수행 단계별 산출물 목록</strong>
+        
+                <ul class="task-list" style="margin-bottom: 25px;">
+                <li style="margin-bottom: 5px;"><strong> 요구사항 분석 :</strong> 인터뷰 회의록, 와이어프레임</li>
+                <li style="margin-bottom: 5px;"><strong> 설계 :</strong> 공통 및 기타 설계, 웹 화면설계서, 앱 화면설계(메뉴 약 10개), 관리자 화면설계서(메뉴 약 12개), CMS 설계서, 메뉴구조도, 정책정의서, 코드 정의서, 질의응답 목록</li>
+                <li><strong>구현:</strong> 테스트 시나리오, 테스트 결과서 </li>
+                <li><strong>안정화 및 유지보수 :</strong> 결함 관리 대장, 화면설계서(고도화)</li>
+        </ul>
+
+    </div>
+
+    <div style="margin-bottom: 100px;"></div>
+
+    <hr class="divider">
+
+    <div class="section">
+        <h2>5. 성과 및 성찰</h2>
+             
+        <p class="desc-text" style="margin-bottom: 5px;">
+            <strong>기획자로서의 성장 포인트</strong>
+        </p>
+        <div class="desc-text" style="line-height: 1.8;">
+            <p style="margin-bottom: 10px;"> 기획 PA로 투입되었지만, 중반에 기획PL이 이탈하면서 기획부터 런칭까지 프로젝트를 주도적으로 리딩할 수 있던 프로젝트였습니다. 신규 구축부터 런칭 이후의 결함 대응, 운영하면서 서비스 개편과 고도화까지 이끌었으며 적극적인 소통과 협업으로 서비스를 안정화시킴으로써 고객과 사용자의 만족도를 높일 수 있었습니다. 프리랜서로 SI프로젝트에 투입이 되면 분석에서 설계 단계까지만 근무하고 철수하는 경우가 많은데 갤럭시 캠퍼스 스토어 앱 프로젝트에서는 7월 앱 런칭 이후에도 서비스 안정화와 결함 관리, 이후 유지보수와 개선 작업까지 진행하며 내 설계에 대해 스스로 책임지는 경험을 할 수 있었습니다.
+            </p>
+        </div>
+    </div>
+
+    <div style="margin-bottom: 100px;"></div>
+
+</body>
+</html>

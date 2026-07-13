@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Template - Vivienne's Portfolio</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+    <a href="../index.html" class="back-btn">← Go to the Main</a>
+
+    <div class="project-detail-title">
+        <h1>디지털 초코 리뉴얼 구축</h1>
+    </div>
+
+    <div class="info" style="margin-bottom: 40px;">
+        <div class="info-row"><strong>수행 기간 :</strong> 2023.07~2023.11</div>
+        <div class="info-row"><strong>소속 / 직급 :</strong> 유컴패니온 / 책임</div>
+        <div class="info-row"><strong>주요 도메인 :</strong> 교육</div>
+    </div>
+
+    <div class="section">
+        <h2>1. 프로젝트 개요</h2>
+        <p class="desc-text">
+            급변하는 트렌드에 대응하여 기존 초코팝 서비스의 UI/UX 및 기능 고도화 필요성이 제기되는 상황이었습니다. 이에 일반 학생·학부모 대상의 B2C 서비스를 개선함과 동시에 초등학교, 대형 학원 등 기관 사용자를 위한 '선생님-학생' 구조의 B2B 서비스를 신규 구축하고자 했습니다. 이를 위해 다각적인 사용자 유형과 권한을 정의하고, 이에 최적화된 프론트 및 관리자 시스템을 고도화하여 원활한 통합 교육 서비스 환경을 구축하는 프로젝트였습니다.            
+            </p>
+    </div>
+
+    <div class="section">
+        <h2>2. 주요 역할 및 수행 작업</h2>
+        <ul class="task-list">
+            <li>유관부서 인터뷰를 통한 요구사항 분석 정의</li>
+            <li>도출된 요구사항을 토대로 B2B Front, Admin 메뉴구조도(IA) 정의 및 기능명세서 작성</li>
+            <li>주요 서비스에 대한 상세 프로세스 설계</li>
+            <li>서비스별 정책 정의 및 공통 코드 설계</li>
+            <li>사용자 유형별 개별 화면설계서 작성</li>
+        </ul>
+    </div>
+
+    <hr class="divider">
+
+    <div class="section">
+        <h2>3. 상세 기획 및 화면 설계</h2>
+        
+        <h3 style="font-size: 1.3rem; color: #222; margin-top: 30px; margin-bottom: 10px;">
+        📌  B2B 초코- 교사
+        </h3>
+        
+        <p class="desc-text" style="margin-bottom: 10px;">
+            <strong>기획 의도</strong><br>
+            <div class="design-img-wrap">
+                <img src="images/teacher_lms_home.png" alt="admin0">
+            </div>
+        </p>
+
+        <ul class="task-list" style="line-height: 1.8;">
+            <li><strong>1) 교사 대시보드 홈 :</strong> 메인 대시보드 내 n개의 학급 정보 및 실시간 출석 현황 조회 기능을 도입하여, 교사의 학급 및 학생 관리 편의성 극대화  </li>
+            <li><strong>2) 접근성 강화 :</strong> 교사 관점의 핵심 데이터와 서비스 우선순위(Level)를 재정의하고, 이를 직관적인 메뉴명과 UX 동선으로 시각화하여 서비스 접근성 및 정보 탐색 속도 향상</li>
+            </ul>
+
+            <div class="design-img-wrap">
+                <img src="images/teacher_manage class.png" alt="admin0">
+            </div>
+        </p>
+
+        <ul class="task-list" style="line-height: 1.8;">
+            <li><strong>1) 학급 관리 :</strong> 데이터 기본값을 '학기' 기준으로 정의하여, 초등학교 및 교육 기관별 정규 교육 과정과 매칭되는 유연한 커리큘럼 설계 환경 제공</li>
+            <li><strong>2) 사용성 강화 :</strong> 표준 엑셀 템플릿 기반의 학생 정보 일괄 업로드 기능을 신설하고, 공지·자료·알림톡의 대량 발송 프로세스를 구축하여 현업 교사의 수작업 공수 절감 및 업무 효율화 달성</li>
+            <li><strong>3) Any Device 지원 가능한 UI :</strong> 기본값을 태블릿 화면으로 정의하되 Mobile, PC 환경에서도 위화감 없는 서비스 이용이 가능하도록 반응형 UI 설계</li>
+            </ul>
+
+            <div class="design-img-wrap">
+                <img src="images/institude_lms_home.png" alt="admin0">
+            </div>
+        </p>
+
+        <ul class="task-list" style="line-height: 1.8;">
+            <li><strong>1) 기관 관리 :</strong> 기관 관리자 페르소나를 별도로 정의하고 통계 데이터 분석 및 관리 기능 신규로 설계</li>
+
+        <h3 style="font-size: 1.3rem; color: #222; margin-top: 40px; margin-bottom: 10px;">
+            📌 관리자 화면
+        </h3>
+        
+       
+        <div class="desc-text">
+            <strong>기획 의도</strong><br>
+            <div class="design-img-wrap">
+                <img src="images/choco_dashboard.png" alt="admin1">
+            </div>
+            <ul style="margin-top: 5px; margin-bottom: 20px; list-style-type: disc; padding-left: 20px;">
+                <ul class="task-list" style="line-height: 1.8;">
+                    <li><strong>1) 신규 프로세스 설계 :</strong> B2B 비즈니스 모델 확장에 대응하여 기관 등록, 계약 조회, 기관 및 교사 권한 관리 등 백오피스 핵심 운영 프로세스 및 기능 정의 </li>
+                    <li><strong>2) 데이터 시각화 및 활용 :</strong> 기관별·규모별 계약 현황 및 영업 지표를 직관적인 대시보드(그래프) 형태로 시각화하여, 사내 마케팅 및 영업 부서의 데이터 기반 전략 수립 지원</li>
+                    </ul>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>4. 사용 도구 및 산출물</h2>
+        <p class="desc-text" style="margin-bottom: 10px;">
+            <strong>사용 도구</strong>
+        </p>
+         <div class="keyword-wrap">
+                        <span class="keyword-tag">#Figma</span>
+                        <span class="keyword-tag">#Notion</span>
+                        <span class="keyword-tag">#Dooray</span>
+                        <span class="keyword-tag">#GoogleDocs</span>
+                    </div>
+        <p class="desc-text" style="margin-bottom: 10px;">
+            <strong>수행 업무 및 산출물 목록</strong>
+        
+                <ul class="task-list" style="margin-bottom: 25px;">
+                <li style="margin-bottom: 5px;"><strong> 요구사항 분석 :</strong> 인터뷰 회의록, 요구사항 정의서</li>
+                <li style="margin-bottom: 5px;"><strong> 프로세스 설계 :</strong> 프로세스 설계서</li>
+                <li><strong>설계 실무:</strong> IA, Figma 화면 설계서(B2C(학생), B2B(교사/기관))</li>
+                <li><strong>테스트 및 결함 대응 :</strong> 크리티컬 이슈 목록 정의, 테스트 시나리오</li>
+        </ul>
+
+    </div>
+
+    <div style="margin-bottom: 100px;"></div>
+
+    <hr class="divider">
+
+    <div class="section">
+        <h2>5. 성과 및 성찰</h2>
+             
+        <p class="desc-text" style="margin-bottom: 5px;">
+            <strong>기획자로서의 성장 포인트</strong>
+        </p>
+        <div class="desc-text" style="line-height: 1.8;">
+            <p style="margin-bottom: 10px;">    이번 프로젝트에서는 B2C 중심의 기존 초코팝 서비스가 가진 약점을 극복하고, B2B라는 새로운 비즈니스 모델을 안정적으로 런칭하는 것이 가장 핵심적인 과제였습니다. 초기 분석 단계에서 브랜드가 갖고 있는 디자인 정체성을 유지하면서도 저연령층 학생과 학부모 모두를 아우르는 B2C 화면을 설계하고, B2B 신규 서비스 설계와 복잡한 LCMS 및 백오피스 연동 정책을 수립하는 과정은 제게 큰 도전이었습니다. 
+            그러나 이 과정에서 초등학생이라는 특정 타깃 관점의 UI/UX를 깊이 있게 연구하며 기획적 시야를 넓힐 수 있었고, 협업 툴 Dooray를 중심으로 소통 채널을 일원화하여 실시간 고객 피드백 반영 및 산출물 버전 관리를 명확히 수행한 점은 큰 자산이 되었습니다. 
+            다만 기관 및 교사향이라는 다소 생소한 도메인 개념으로 인해 초반 프로세스 설계 단계에서 일부 디테일이 부족하여 개발 커뮤니케이션 공수가 일시적으로 증가했던 점은 아쉬움으로 남습니다. 하지만 이를 계기로 프로젝트 초반의 명확한 요구사항과 예외 케이스, 프로세스 검증와 같은 분석과 설계가 얼마나 중요한지 다시 한 번 깨달을 수 있었으며, 향후 한 단계 더 치밀하고 완결성 있는 아키텍처를 구축할 수 있는 교훈을 얻었습니다.
+            </p>
+        </div>
+    </div>
+
+    <div style="margin-bottom: 100px;"></div>
+
+</body>
+</html>
