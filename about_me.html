@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About me | 기획자 비비안</title>
+    <title>About me | 기획자 박겨울</title>
     <link rel="stylesheet" href="style.css">
 
     <style>
@@ -32,13 +32,14 @@
     </style>
 </head>
 <body>
+<a href="index.html" class="back-btn" style="display: inline-block; margin-bottom: 30px;">← Go to the Main</a>
 
     <div class="aboutme-wrap">
-        <div class="aboutme-title-section" style="margin-bottom: 25px; line-height: 1.4;">
+        <div class="aboutme-title-section" style="margin-top: 10px; margin-bottom: 25px; line-height: 1.4;">
             <div style="font-size: 0.95rem; color: #999999; margin-bottom: 5px;">비즈니스의 성장을 설계하는</div>
             <div style="font-size: 1.5rem; color: #111111; font-weight: bold;">
                 Platform/Service 기획자<br>
-                <strong>비비안</strong>입니다.
+                <strong>박겨울</strong>입니다.
             </div>
         </div>
 
@@ -52,9 +53,9 @@
         <section class="aboutme-section">
             <h2 style="font-size: 1.4rem; color: #111111; font-weight: 700; margin: 0 0 20px 0;">🙋‍♀️ Profile</h2>
             <ul style="list-style: none; padding: 0; margin: 0; line-height: 1.8; font-size: 1rem;">
-                <li style="margin-bottom: 8px;"><strong style="font-weight: 700; color: #111;">이름 :</strong> 비비안</li>
-                <li style="margin-bottom: 8px;"><strong style="font-weight: 700; color: #111;">이메일 :</strong> abcd@gmail.com</li>
-                <li style="margin-bottom: 0;"><strong style="font-weight: 700; color: #111;">생년월일 :</strong> YYYY.MM.DD.</li>
+                <li style="margin-bottom: 8px;"><strong style="font-weight: 700; color: #111;">이름 :</strong> 박겨울</li>
+                <li style="margin-bottom: 8px;"><strong style="font-weight: 700; color: #111;">이메일 :</strong> family08@naver.com</li>
+                <li style="margin-bottom: 0;"><strong style="font-weight: 700; color: #111;">생년월일 :</strong> 1991. 8. 4.</li>
             </ul>
         </section>
 
@@ -63,47 +64,69 @@
 <!-- 4. Education 섹션 (간격 좁히기 스펙 적용) -->
         <section class="aboutme-section">
             <h2 style="font-size: 1.4rem; color: #111111; font-weight: 700; margin: 0 0 12px 0;">🎓 Education</h2>
-            <div style="margin-bottom: 4px;">
-                <div style="font-size: 0.8rem; color: #666666; margin-bottom: 0px;">대학원</div>
-                <div style="font-size: 0.95rem; color: #000000; font-weight: 500;">한양사이버대학교 디자인 대학원 석사 졸업</div>
+            
+            <!-- 1. 대학원 -->
+            <div class="edu-group">
+                <div style="margin-bottom: 4px;">
+                    <div style="font-size: 0.8rem; color: #666666; margin-bottom: 0px;">대학원</div>
+                    <div style="font-size: 0.95rem; color: #000000; font-weight: 500;">한양사이버대학교 디자인 대학원 석사 졸업</div>
+                </div>
+                <!-- 💡 20px의 넉넉한 하단 마진 추가 -->
+                <ul style="list-style: none; padding: 0; margin: 0 0 20px 0; line-height: 1.6; font-size: 0.95rem; color: #555;">
+                    <li style="margin-bottom: 2px;"><strong style="font-weight: 700; color: #333;">• 전공 :</strong> 디자인기획</li>
+                    <li style="margin-bottom: 2px;"><strong style="font-weight: 700; color: #333;">• 재학 기간 :</strong> 2019.03 ~ 2021.08</li>
+                    <li style="line-height: 1.4; word-break: keep-all;"><strong style="font-weight: 700; color: #333;">• 논문명 :</strong> 모바일 환경에서의 사용성 향상을 위한 UX 디자인 방향 연구 : 사용성 높은 이커머스 앱을 중심으로</li>
+                </ul>
             </div>
-            <ul style="list-style: none; padding: 0; margin: 0; line-height: 1.6; font-size: 0.95rem; color: #555;">
-                <li style="margin-bottom: 2px;"><strong style="font-weight: 700; color: #333;">• 전공 :</strong> 디자인기획</li>
-                <li><strong style="font-weight: 700; color: #333;">• 재학 기간 :</strong> 2019.03 ~ 2021.08</li>
-                <li><strong style="font-weight: 700; color: #333;">• 논문명 :</strong> 모바일 환경에서의 사용성 향상을 위한 UX 디자인 방향 연구 : 사용성 높은 이커머스 앱을 중심으로</li>
-            </ul>
-            <div style="margin-bottom: 4px;">
-                <div style="font-size: 0.8rem; color: #666666; margin-bottom: 0px;">대학교(4년)</div>
-                <div style="font-size: 0.95rem; color: #000000; font-weight: 500;">방송통신대학교 학사 졸업</div>
+
+            <!-- 2. 대학교(4년) -->
+            <div class="edu-group">
+                <div style="margin-bottom: 4px;">
+                    <div style="font-size: 0.8rem; color: #666666; margin-bottom: 0px;">대학교(4년)</div>
+                    <div style="font-size: 0.95rem; color: #000000; font-weight: 500;">방송통신대학교 학사 졸업</div>
+                </div>
+                <ul style="list-style: none; padding: 0; margin: 0 0 20px 0; line-height: 1.6; font-size: 0.95rem; color: #555;">
+                    <li style="margin-bottom: 2px;"><strong style="font-weight: 700; color: #333;">• 전공 :</strong> 컴퓨터 과학</li>
+                    <li><strong style="font-weight: 700; color: #333;">• 재학 기간 :</strong> 2014.03 ~ 2017.02</li>
+                </ul>
             </div>
-            <ul style="list-style: none; padding: 0; margin: 0; line-height: 1.6; font-size: 0.95rem; color: #555;">
-                <li style="margin-bottom: 2px;"><strong style="font-weight: 700; color: #333;">• 전공 :</strong> 컴퓨터 과학</li>
-                <li><strong style="font-weight: 700; color: #333;">• 재학 기간 :</strong> 2014.03 ~ 2017.02</li>
-            </ul>
-            <div style="margin-bottom: 4px;">
-                <div style="font-size: 0.8rem; color: #666666; margin-bottom: 0px;">대학교(2,3년)</div>
-                <div style="font-size: 0.95rem; color: #000000; font-weight: 500;">한양여자대학교 전문학사 졸업</div>
+
+            <!-- 3. 대학교(2,3년) -->
+            <div class="edu-group">
+                <div style="margin-bottom: 4px;">
+                    <div style="font-size: 0.8rem; color: #666666; margin-bottom: 0px;">대학교(2,3년)</div>
+                    <div style="font-size: 0.95rem; color: #000000; font-weight: 500;">한양여자대학교 전문학사 졸업</div>
+                </div>
+                <ul style="list-style: none; padding: 0; margin: 0 0 20px 0; line-height: 1.6; font-size: 0.95rem; color: #555;">
+                    <li style="margin-bottom: 2px;"><strong style="font-weight: 700; color: #333;">• 전공 :</strong> 섬유패션디자인</li>
+                    <li><strong style="font-weight: 700; color: #333;">• 재학 기간 :</strong> 2012.03 ~ 2014.02</li>
+                </ul>
             </div>
-            <ul style="list-style: none; padding: 0; margin: 0; line-height: 1.6; font-size: 0.95rem; color: #555;">
-                <li style="margin-bottom: 2px;"><strong style="font-weight: 700; color: #333;">• 전공 :</strong> 섬유패션디자인</li>
-                <li><strong style="font-weight: 700; color: #333;">• 재학 기간 :</strong> 2012.03 ~ 2014.02</li>
-            </ul>
-            <div style="margin-bottom: 4px;">
-                <div style="font-size: 0.8rem; color: #666666; margin-bottom: 0px;">고등학교</div>
-                <div style="font-size: 0.95rem; color: #000000; font-weight: 500;">천천고등학교 졸업</div>
+
+            <!-- 4. 고등학교 -->
+            <div class="edu-group">
+                <div style="margin-bottom: 4px;">
+                    <div style="font-size: 0.8rem; color: #666666; margin-bottom: 0px;">고등학교</div>
+                    <div style="font-size: 0.95rem; color: #000000; font-weight: 500;">천천고등학교 졸업</div>
+                </div>
+                <ul style="list-style: none; padding: 0; margin: 0 0 20px 0; line-height: 1.6; font-size: 0.95rem; color: #555;">
+                    <li style="margin-bottom: 2px;"><strong style="font-weight: 700; color: #333;">• 구분 :</strong> 인문계</li>
+                    <li><strong style="font-weight: 700; color: #333;">• 재학 기간 :</strong> 2007.03 ~ 2010.02</li>
+                </ul>
             </div>
-            <ul style="list-style: none; padding: 0; margin: 0; line-height: 1.6; font-size: 0.95rem; color: #555;">
-                <li style="margin-bottom: 2px;"><strong style="font-weight: 700; color: #333;">• 구분 :</strong> 인문계</li>
-                <li><strong style="font-weight: 700; color: #333;">• 재학 기간 :</strong> 2007.03 ~ 2010.02</li>
-            </ul>
-                        <div style="margin-bottom: 4px;">
-                <div style="font-size: 0.8rem; color: #666666; margin-bottom: 0px;">기타 교육</div>
-                <div style="font-size: 0.95rem; color: #000000; font-weight: 500;">자바 웹 프로그래밍 개발자 양성 과정</div>
+
+            <!-- 5. 기타 교육 -->
+            <div class="edu-group">
+                <div style="margin-bottom: 4px;">
+                    <div style="font-size: 0.8rem; color: #666666; margin-bottom: 0px;">기타 교육</div>
+                    <div style="font-size: 0.95rem; color: #000000; font-weight: 500;">자바 웹 프로그래밍 개발자 양성 과정</div>
+                </div>
+                <!-- 💡 마지막 아이템은 아래 디바이더 선과의 간격을 맞추기 위해 margin-bottom을 0으로 깔끔하게 처리! -->
+                <ul style="list-style: none; padding: 0; margin: 0; line-height: 1.6; font-size: 0.95rem; color: #555;">
+                    <li style="margin-bottom: 2px;"><strong style="font-weight: 700; color: #333;">• 교육기관 :</strong> 마우스컴퓨터학원</li>
+                    <li><strong style="font-weight: 700; color: #333;">• 교육 기간 :</strong> 2016.09 ~ 2017.03</li>
+                </ul>
             </div>
-            <ul style="list-style: none; padding: 0; margin: 0; line-height: 1.6; font-size: 0.95rem; color: #555;">
-                <li style="margin-bottom: 2px;"><strong style="font-weight: 700; color: #333;">• 교육기관 :</strong> 마우스컴퓨터학원</li>
-                <li><strong style="font-weight: 700; color: #333;">• 교육 기간 :</strong> 2016.09 ~ 2017.03</li>
-            </ul>
         </section>
 
         <hr class="section-divider" style="border: 0; height: 1px; background: #e5e5e5; margin: 40px 0;">
